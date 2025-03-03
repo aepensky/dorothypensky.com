@@ -1,0 +1,36 @@
+{
+  "name": "www.dorothypensky.com",
+  "version": "2",
+  "description": "Author website for Dorothy Pensky",
+  "type": "module",
+  "scripts": {
+    "go!": "npx @11ty/eleventy --incremental",
+    "dev": "rimraf public && npx @11ty/eleventy --serve --watch",
+    "instal": "npm install && npm install -g npm-check-updates",
+    "upgrade": "ncu --upgrade && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aepensky/dorothypensky.com.git"
+  },
+  "keywords": [
+    "11ty",
+    "css",
+    "md",
+    "html"
+  ],
+  "author": "Alexander Pensky",
+  "bugs": {
+    "url": "https://github.com/aepensky/dorothypensky.com/issues"
+  },
+  "homepage": "www.dorothypensky.com",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "markdown-it": "^14.0.0",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-bracketed-spans": "^1.0.1",
+    "markdown-it-container": "^4.0.0",
+    "rimraf": "^5.0.5"
+  }
+}

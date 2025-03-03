@@ -1,0 +1,15 @@
+---
+title: Error {{ error.number }}
+description: Error Page {{ error.number }}.
+layout: homepage.njk
+keyword: error {{ error.number }}
+permalink: "/{{ error.number }}.html"
+eleventyExcludeFromCollections: true
+pagination:
+    data: error-pages
+    size: 1
+    alias: error
+---
+
+<h1 class="text-center">Error {{ error.number }}</h1>
+

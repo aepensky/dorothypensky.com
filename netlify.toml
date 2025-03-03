@@ -1,0 +1,9 @@
+[build]
+  base = ""
+  publish = "public"
+  command = "npm run go!"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "allow"

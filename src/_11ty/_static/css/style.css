@@ -1,0 +1,310 @@
+:root {
+  --gap: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
+  --font: "Montserrat";
+  --duration: 0.6s;
+  --timing: ease-in-out;
+
+  --color: #11182c;
+  --bg: #f1f5f9;
+  --bg2: #e2e8f0;
+
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+	--color-header-bg: #2b6a83;
+	--color-footer-bg: #2b6a83;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+html {
+  color-scheme: light;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* min body height */
+body {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: clamp(1.15rem, 1vw + 0.5rem, 2.5rem);
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  accent-color: var(--bg2);
+  /* transition:
+    color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+    */
+}
+
+::selection {
+  background-color: var(--bg);
+  color: var(--color);
+  text-decoration-color: var(--color);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.08em;
+  }
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+h1,
+h2,
+h3 {
+
+  text-wrap: balance;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  font-family: var(--font) ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1 {
+  font-size: clamp(2.35rem, 4vw + 0.5rem, 4.85rem);
+  padding-bottom: 2rem;
+  font-weight: 600;
+  color: var(--color-header-bg);
+  text-decoration: underline var(--color-gray-50);
+	text-shadow: -1px 1px 1px var(--color-gray-90), 0 0 2rem rgba(255, 255, 255, 0.7);
+}
+
+h2 {
+  font-size: clamp(1.85rem, 3vw + 0.5rem, 3.85rem);
+  padding-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.booktitle {
+  font-style: italic;
+}
+
+h3 {
+  font-size: clamp(1.45rem, 2vw + 0.5rem, 2.85rem);
+  padding-bottom: 1rem;
+}
+
+p {
+  text-align: left;
+  text-wrap: pretty;
+  padding: 1rem 0;
+}
+
+select {
+  background-color: var(--bg);
+  border: none;
+  transition: background-color var(--duration) var(--timing);
+}
+
+select:focus-visible {
+  outline: solid 1px var(--bg2);
+  outline-offset: 3px;
+  transition: outline var(--duration) var(--timing);
+}
+.content {
+  margin: 2em 1em;
+  /*
+  --max-content-width: 60ch;
+  --breakout-difference:0.25;
+  */
+  /*  Compute total allowed grid width to `--breakout-difference` larger than content area  */
+  /* 
+  --breakout-grid-width: calc( var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)) );
+  grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 1fr) [content-end] 1fr [grid-end];
+  width: min(100% - calc(2.75 * var(--gap)), var(--breakout-grid-width));
+  row-gap: var(--gap);
+  margin-inline: auto;
+  */
+  display: block;
+}
+
+/*
+.content > *:not(.breakout) {
+  grid-column: content;
+}
+
+.content > .breakout {
+  grid-column: grid;
+}
+*/
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+li {
+  padding: 0.5rem 0;
+  margin-left: 2rem;
+}
+
+/* Header with name and photo */
+
+header {
+	background-color: var(--color-header-bg);
+	border-bottom: 1px solid var(--color-gray-50);
+	padding: 2rem;
+}
+#dorothy-name {
+  font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+	font-size: 5rem;
+	font-variant-caps: small-caps;
+	text-shadow: -2px 1px 4px var(--color-gray-90); /* , 0 0 2rem rgba(255, 255, 255, 0.8); */
+	width: 100%;
+	text-align: left;
+	padding: 2rem 3rem;
+	color: cornsilk;
+}
+#header-image {
+	background-image: url("/img/DorothyHeadshot.png"), url("/img/ocean.jpg");
+	background-repeat: no-repeat;
+  background-size: 25%, cover;
+  background-position: 95% 70%;
+	min-height: 500px;
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.6);	
+}
+
+/* Nav */
+nav, div.social-buttons, footer {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1em;
+}
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul.nav {
+	display: flex;
+	column-gap: 5em;
+	justify-content: space-around;
+	align-items: center;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a {
+  font-family: "Faculty Glyphic", serif;
+  font-weight: 400;
+	font-variant-caps: small-caps;
+	font-size: xx-large;
+	color: cornsilk !important;
+	text-shadow: -1px 1px 1px var(--color-gray-90), 0 0 2rem rgba(255, 255, 255, 0.7);
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.mermaid-picture {
+  float: left;
+  vertical-align: middle;
+  margin: 0 2em;
+  width: 80px;
+  border: 2px solid green;
+}
+
+.about-container {
+  margin:0;
+  padding: 0;
+}
+
+.baby-picture {
+  float: left;
+  margin: 0 2em;
+  width: 150px;
+  border: 2px solid green;
+}
+
+.divider {
+  margin-top: 2rem;
+}
+
+/* Footer with buttons to follow on social media */
+
+footer {
+	height: stretch;
+  clear: both;
+  margin: 0;
+  margin-top: 3rem;
+  padding: 3rem 0;
+  display: block;
+	border-top: 1px solid var(--color-gray-50);
+	background-color: var(--color-footer-bg);
+	min-height: 8em;
+	height: stretch;
+	width: 100%;
+}
+.social-buttons ul {
+	display: flex;
+	column-gap: 5em;
+	justify-content: space-around;
+}
+li.social-button {
+	display: inline-block;
+}
+.footer-lastrow {
+  display: flex;
+  justify-content: space-around;
+}
+.copyright {
+  display: inline;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
