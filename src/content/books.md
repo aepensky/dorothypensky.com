@@ -11,14 +11,14 @@ eleventyNavigation:
 
 # Secrets of Blood and Song
 
-This book has a one-sentence description saying what the book is about.  Mermaids.
+Ween, an outsider among the mermaids, must become human when her own error leads her sister to be captured and put in a human zoo.  Pedar, zookeeper, falls in love with Ween, but can she ever return such a feeling for her enemy?
 
 ![Mermaid Figurine](/img/jm-mermaid.jpg){.mermaid-picture}
 
 * [Read Chapter 1 of Secrets of Blood and Song](/books/secrets/ch1)
 * [Read Chapter 2 of Secrets of Blood and Song](/books/secrets/ch2)
 * [Read Chapter 3 of Secrets of Blood and Song](/books/secrets/ch3)
-* [Ween's Song](ween-song.md)
+* [Vanity Ballad (Ween's Song)](/books/secrets/vanity-ballad)
 
 -----------------{.divider}
 
