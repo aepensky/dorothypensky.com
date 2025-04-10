@@ -1,4 +1,16 @@
-**Chapter Three**
+---
+title: {{ meta.site }} 
+description: {{ meta.description }} 
+layout: homepage.njk
+permalink: books/secrets/ch3.html
+eleventyNavigation: false
+---
+
+# SECRETS OF BLOOD AND SONG
+
+By Dorothy Pensky
+
+## Chapter Three
 
 All the kelp fronds flow one way and then the other in the shifting
 current. Amber purses her shell-like lips. "No one else is coming?"

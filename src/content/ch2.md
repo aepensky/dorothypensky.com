@@ -1,4 +1,16 @@
-**Chapter Two**
+---
+title: {{ meta.site }} 
+description: {{ meta.description }} 
+layout: homepage.njk
+permalink: books/secrets/ch2.html
+eleventyNavigation: false
+---
+
+# SECRETS OF BLOOD AND SONG
+
+By Dorothy Pensky
+
+## Chapter Two
 
 As the first star of the night rises, I swim at the very back of the vee
 of mermaids, dark heads above the surface, tails slowly pumping below.

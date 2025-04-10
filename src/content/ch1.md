@@ -1,4 +1,16 @@
-**Chapter One**
+---
+title: {{ meta.site }} 
+description: {{ meta.description }} 
+layout: homepage.njk
+permalink: books/secrets/ch1.html
+eleventyNavigation: false
+---
+
+# SECRETS OF BLOOD AND SONG
+
+By Dorothy Pensky
+
+## Chapter One
 
 I'll fight for love with every twitch of my hair, every pump of my
 fluke, every stroke of my shard, though love is rarer than a sturgeon.
