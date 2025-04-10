@@ -159,27 +159,26 @@ header {
 	width: 100%;
 	text-align: left;
 	padding: 2rem 3rem;
-	color: cornsilk;
+	color: #255588;
 }
 #dorothy-headshot {
   max-width: 45%;
-  margin-left: 50%;
+  margin-left: 55%;
   margin-bottom: 1rem;
-  mask: 
-    linear-gradient(to top,  transparent 10%, #fff 15% 90%, transparent 95%),
-    linear-gradient(to left, transparent 10%, #fff 15% 90%, transparent 95%);
-  mask-size: 110% 110%;
+  mask: radial-gradient(#000 62%, transparent 70%);
+  /* mask-size: 110% 110%; */
   mask-position: center;
   mask-repeat:no-repeat;
   mask-composite: intersect;
-  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  /* box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.6); */
 }
 #header-image {
   min-height: 500px;
-	background-image: url("/img/ocean.jpg");
+	background-image: url("/img/sunset-background.png");
 	background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: lighten;
+  background-position: center;
 	box-shadow: 0px 0px 7px 0px;
 }
 
@@ -246,6 +245,19 @@ ul.nav {
 
 .divider {
   margin-top: 2rem;
+}
+
+.word-doc-list ul {
+  /* padding-left: 2rem; */
+  list-style-type: none;
+}
+
+.word-doc-list li {
+  padding-left: 2rem;
+  background-image: url(/img/docx.png);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
 }
 
 /* Footer with buttons to follow on social media */

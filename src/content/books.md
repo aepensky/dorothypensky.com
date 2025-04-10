@@ -24,6 +24,10 @@ Ween, an outsider among the mermaids, must become human when her own error leads
 
 ## Download Sample Chapters of [Secrets of Blood and Song]{.booktitle}:
 
-![Word Document](/img/docx.png)[Chapter 1](/bookmedia/ch1.docx)
-[Chapter 2](/bookmedia/ch2.docx)
-[Chapter 3](/bookmedia/ch3.docx)
+<div class="word-doc-list">
+
+* [Chapter 1](/bookmedia/ch1.docx)
+* [Chapter 2](/bookmedia/ch2.docx)
+* [Chapter 3](/bookmedia/ch3.docx)
+
+</div>
