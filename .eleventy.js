@@ -26,7 +26,7 @@ export default async function(eleventyConfig) {
     });
 
     eleventyConfig
-    .addPassthroughCopy({ "src/_11ty/_static/css": "css" })
+        .addPassthroughCopy({ "src/_11ty/_static/css": "css" })
         .addPassthroughCopy({ "src/_11ty/_static/icon": "favicon" })
         .addPassthroughCopy({ "src/_11ty/_static/bookmedia": "bookmedia" })
         .addPassthroughCopy({ "src/_11ty/_static/images": "img" });
@@ -64,6 +64,6 @@ export const config = {
         includes: "../_11ty/_includes/",
         layouts: "../_11ty/_layouts/",
         data: "../_11ty/_data/",
-        output: "./public/",
+        output: "./_site/",
         },
 };

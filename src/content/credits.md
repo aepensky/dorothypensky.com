@@ -10,6 +10,6 @@ eleventyNavigation: false
 All content {% copy %} except:
 
 * Mermaid scuplture and photo &#169;&nbsp; [Jenny Mendes](http://www.jennymendes.com)
-* Vanity Ballad music &#169;&nbsp; 2025 Tom Ray
+* Vanity Ballad music &#169;&nbsp; 2026 Tom Ray
 
 Website maintained by [Alexander Pensky](mailto:alex@pensky.net)

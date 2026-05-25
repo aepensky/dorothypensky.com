@@ -1,0 +1,21 @@
+on:
+  - push
+
+jobs:
+  build-site:
+    name: Build website and upload compressed files to artifact storage
+    runs-on: localhost
+    steps:
+      - name: Checkout website source code
+        uses: actions/checkout@v4
+
+      - name: Build the static website
+        run: |
+          npm install
+          npm run build
+
+      - name: Copy static website files from build to deploy directory 
+        run: "cd ${{ forgejo.workspace }}/_site && cp --verbose --recursive --target-directory /sites/dorothypensky.com ."
+
+      - name: Verify new files
+        run: ls -lR /sites/dorothypensky.com
