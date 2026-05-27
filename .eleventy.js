@@ -45,8 +45,8 @@ export default async function(eleventyConfig) {
         breaks: true,
         linkify: true
     })
-    .use(markdownItBracketedSpan)
-    .use(markdownItAttrs)
+        .use(markdownItBracketedSpan)
+        .use(markdownItAttrs)
     eleventyConfig.setLibrary('md', markdownLib);
 }
 
