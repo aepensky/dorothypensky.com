@@ -1,16 +1,19 @@
 :root {
   --gap: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
   --font: "Montserrat";
+  --big-text-font: "Faculty Glyphic";
+  /* --default-fonts: "Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"" */
   --duration: 0.6s;
   --timing: ease-in-out;
 
   --color: #11182c;
-  --bg: #f1f5f9;
+  --bg: #cae6f1;
   --bg2: #e2e8f0;
 
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
+  --color-blue-gray: #364567;
 
 	--background-color: #fff;
 	--color-header-bg: #2b6a83;
@@ -22,6 +25,15 @@
 	--text-color-link-visited: #17050F;
 
 	--syntax-tab-size: 2;
+}
+
+@font-face {
+  font-family: "Faculty Glyphic";
+  src: url("/fonts/FacultyGlyphic-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 html {
@@ -47,15 +59,17 @@ html {
 /* min body height */
 body {
 	height: 100vh;
-	padding: 0;
+  padding: 0;
 	margin: 0;
   background-color: var(--bg);
   color: var(--color);
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font), serif; /*, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   font-size: clamp(1.15rem, 1vw + 0.5rem, 2.5rem);
+  /* font-size: 1.3rem; */
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
+  font-stretch: condensed;
   line-height: 1.4;
   accent-color: var(--bg2);
   /* transition:
@@ -93,15 +107,16 @@ h3 {
   text-wrap: balance;
   font-weight: 500;
   line-height: 1.25;
-  letter-spacing: -0.025em;
-  font-family: var(--font) ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: +0.025em;
+  font-family: var(--big-text-font);
+  /* font-family: var(--font) ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
 h1 {
   font-size: 2rem; /* clamp(2rem, 4vw + 0.5rem, 4rem) */
   padding-bottom: 2rem;
   font-weight: 600;
-  color: var(--color-gray-90);
+  color: var(--color-blue-gray);
   text-decoration: underline var(--color-gray-50);
   text-decoration-thickness: 2px;
 	/*text-shadow: -1px 1px 1px var(--color-gray-90); /*, 0 0 2rem rgba(255, 255, 255, 0.7);*/
@@ -109,8 +124,9 @@ h1 {
 
 h2 {
   font-size: 1.75rem; /* clamp(1.85rem, 3vw + 0.5rem, 3.85rem); */
+  color: var(--color-blue-gray);
   padding-bottom: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .booktitle {
@@ -119,6 +135,7 @@ h2 {
 
 h3 {
   font-size: clamp(1.45rem, 2vw + 0.5rem, 2.85rem);
+  color: var(--color-blue-gray);
   padding-bottom: 1rem;
 }
 
@@ -129,7 +146,7 @@ p {
 }
 
 .content {
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
   display: block;
 }
 
@@ -139,8 +156,8 @@ p {
 }
 
 li {
-  padding: 0.5rem 0;
-  margin-left: 2rem;
+  padding: 0; /* 0.5rem 0; */
+  margin-left: 0; /* 2rem; */
 }
 
 /* Header with name and photo */
@@ -148,67 +165,78 @@ li {
 header {
 	background-color: var(--color-header-bg);
 	border-bottom: 1px solid var(--color-gray-50);
-	padding: 2rem;
+	/* padding: 2rem; */
+  display: inline-block;
+  width: 100%;
+}
+div#header-image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 200px;
+	background-image: linear-gradient(to right, 
+    transparent 0%, transparent 50%, 
+    rgba(255, 255, 255, 0.7) 82%,
+    rgba(255, 255, 255, 0.7) 87%,
+    /* cornsilk 82%, cornsilk 87%,  */
+    transparent 105%),
+    url("/img/sunset-background.png");
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+	box-shadow: 0px 0px 4px 0px;
 }
 #dorothy-name {
-  font-family: "Faculty Glyphic", serif;
+  display: flexbox;
+  font-family: var(--big-text-font), serif;
   font-weight: 400;
 	font-size: 4rem;
 	font-variant-caps: small-caps;
-	text-shadow: -2px 1px 4px var(--color-gray-90); /* , 0 0 2rem rgba(255, 255, 255, 0.8); */
-	width: 100%;
+	text-shadow: -2px 1px 3px var(--color-gray-90); /* , 0 0 2rem rgba(255, 255, 255, 0.8); */
+	/* max-width: 40%; */
 	text-align: left;
 	padding: 2rem 3rem;
 	color: #255588;
 }
+#dorothy-headshot-container {
+  display: flexbox;
+  /* max-width: 45%; */
+}
 #dorothy-headshot {
-  max-width: 45%;
-  margin-left: 55%;
+  backdrop-filter: blur(3px);
   margin-bottom: 1rem;
-  mask: radial-gradient(white 0%, white 53%, transparent 65%);  
-  mask-size: 110% 110%;
+  margin-right: 5rem;
+  mask: radial-gradient(white 0%, white 31%, transparent 54%);
+  mask-size: 125% 125%;
   mask-position: center;
   mask-repeat:no-repeat;
 }
-#header-image {
-  min-height: 500px;
-	background-image: url("/img/sunset-background.png");
-	background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-	box-shadow: 0px 0px 7px 0px;
-}
 
 /* Nav */
+#topbar {
+  display: flex;
+  justify-content: flex-end;
+}
 nav, div.social-buttons, footer {
-	display: flex;
 	gap: 1em;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	padding: 1em;
 }
-.nav {
-	display: flex;
-	gap: .5em 1em;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-ul.nav {
-	display: flex;
-	column-gap: 5em;
-	justify-content: space-around;
-	align-items: center;
+#toplinks {
+  width: 70%;
+  display: flex;
 }
 .nav-item {
-	display: inline-block;
+	display: flex-block;
+	list-style: none;
 }
 .nav-item a {
-  font-family: "Faculty Glyphic", serif;
+  font-family: var(--big-text-font), serif;
   font-weight: 400;
-	font-variant-caps: small-caps;
-	font-size: xx-large;
+	/* font-variant-caps: small-caps; */
+	font-size: x-large;
 	color: cornsilk !important;
 	text-shadow: -1px 1px 1px var(--color-gray-90), 0 0 2rem rgba(255, 255, 255, 0.7);
 }
@@ -222,8 +250,8 @@ ul.nav {
 .mermaid-picture {
   float: left;
   vertical-align: middle;
-  margin: 0 2em;
-  width: 80px;
+  margin: 0 2em 2em 2em;
+  width: 120px;
 }
 
 .about-container {
@@ -241,18 +269,43 @@ ul.nav {
 }
 
 .divider {
+  clear: both;
   margin-top: 2rem;
 }
 
-.word-doc-list ul {
-  /* padding-left: 2rem; */
-  list-style-type: none;
+/* .sample-chapter-list {
+  display: grid;
+  grid-template-columns: 60% auto;
+  justify-items: left;
+} */
+
+.sample-chapter-page {
+  display: flex;
 }
 
-.word-doc-list li {
-  padding-left: 2rem;
+.sample-chapter-page-link {
+  display: flex;
+}
+
+.download-button-container {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.download-button {
+  display: flexbox;
+  a {
+    font-size: smaller;
+    vertical-align: bottom;
+  }
+}
+
+.docx-image {
+  /* display: flexbox; */
+  width: 1.6rem;
+  margin-left: 0.2rem;
   background-image: url(/img/docx.png);
-  background-position: 0 0;
+  background-position: 0 .2em;
   background-size: 1.6rem 1.6rem;
   background-repeat: no-repeat;
 }
@@ -279,6 +332,11 @@ footer {
 }
 li.social-button {
 	display: inline-block;
+  width: 40px;
+}
+li.social-button img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .footer-lastrow {
   display: flex;
@@ -298,4 +356,3 @@ li.social-button {
 	white-space: nowrap;
 	width: 1px;
 }
-f

@@ -7,27 +7,33 @@ permalink: books.html
 eleventyNavigation:
     key: "Books"
     order: 1
+samplePages: [ 1, 2, 3]
 ---
 
 # Secrets of Blood and Song
 
-Ween, an outsider among the mermaids, must become human when her own error leads her sister to be captured and put in a human zoo.  Pedar, zookeeper, falls in love with Ween, but can she ever return such a feeling for her enemy?
+Bett, a mermaid on the verge of becoming Elderkin, fights with every bead of breath to earn the Protector position from Grandmama, the Stickleback queen. Orphaned, with blood from the despised Cockle kin, Bett will be as ruthless as a shark. But Grandmama won’t elect her, so she deserts the kelp forest, an act punishable by exile. Amber, the Queen-in-Waiting follows. Pedar, a zookeeper for the human Queen, kidnaps Amber. He wants the reward to allow the bonesetter to heal his mother. As Amber languishes, Bett turns human to rescue her. Bett needs Pedar’s good will if she is to save Amber, but wishes to eviscerate him instead. Pedar learns kindness to his animals and saves Amber’s life. His good will blossoms into love for Bett, but could she ever return that feeling when he’s imprisoning her sister?
 
 ![Mermaid Figurine](/img/jm-mermaid.jpg){.mermaid-picture}
 
-* [Read Chapter 1 of Secrets of Blood and Song](/books/secrets/ch1)
-* [Read Chapter 2 of Secrets of Blood and Song](/books/secrets/ch2)
-* [Read Chapter 3 of Secrets of Blood and Song](/books/secrets/ch3)
-* [Vanity Ballad (Ween's Song)](/books/secrets/vanity-ballad)
+## Sample Chapters
 
------------------{.divider}
+<div class="sample-chapter-list">
 
-## Download Sample Chapters of [Secrets of Blood and Song]{.booktitle}:
-
-<div class="word-doc-list">
-
-* [Chapter 1](/bookmedia/secrets/ch1.docx)
-* [Chapter 2](/bookmedia/secrets/ch2.docx)
-* [Chapter 3](/bookmedia/secrets/ch3.docx)
+{%for chapter in samplePages -%}
+    <div class="sample-chapter-page">
+        <div class="sample-chapter-page-link">
+            <a href="/books/secrets/pensky_secrets_ch{{ chapter }}">Chapter {{ chapter }}</a>
+        </div>
+        <div class="download-button-container">
+            (
+            <div class="download-button"><a href="/bookmedia/secrets/pensky_secrets_ch{{ chapter }}.docx">Download</a></div>
+            <div class="docx-image"></div>
+            )
+        </div>
+    </div>
+{% endfor %}
 
 </div>
+
+## Song: [Once Dwelled a Mermaid](/books/secrets/once-dwelled-a-mermaid)
