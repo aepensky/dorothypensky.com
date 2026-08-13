@@ -12,7 +12,15 @@ samplePages: [ 1, 2, 3]
 
 # Secrets of Blood and Song
 
-Bett, a mermaid on the verge of becoming Elderkin, fights with every bead of breath to earn the Protector position from Grandmama, the Stickleback queen. Orphaned, with blood from the despised Cockle kin, Bett will be as ruthless as a shark. But Grandmama won’t elect her, so she deserts the kelp forest, an act punishable by exile. Amber, the Queen-in-Waiting follows. Pedar, a zookeeper for the human Queen, kidnaps Amber. He wants the reward to allow the bonesetter to heal his mother. As Amber languishes, Bett turns human to rescue her. Bett needs Pedar’s good will if she is to save Amber, but wishes to eviscerate him instead. Pedar learns kindness to his animals and saves Amber’s life. His good will blossoms into love for Bett, but could she ever return that feeling when he’s imprisoning her sister?
+Bett, a mermaid on the verge of becoming Elderkin fights with every bead of breath to earn
+the title of Protector of the kin from Grandmama, their queen. Bett, orphan with despised Cockle
+kin blood, is as ruthless as a shark. But Grandmama won’t elect her, so she deserts the kelp forest, an
+act punishable by exile. Amber, the Queen-in-Waiting, follows Bett, leading to her kidnapping by
+Pedar, a zookeeper for the human Queen. Pedar needs his reward from this to heal his ailing mother.
+As Amber languishes, Bett turns human to rescue her. For the first time, Bett finds herself
+understood and admired by someone: Pedar, the mermaid thief. While she would like to bask in his
+goodwill, even return his feelings, she must work against him, until she finds a way for them to find
+true love.
 
 ![Mermaid Figurine](/img/jm-mermaid.jpg){.mermaid-picture}
 
